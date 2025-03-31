@@ -6,6 +6,8 @@ on:
   workflow_dispatch:
   repository_dispatch:
     types: ["publish"]
+  schedule:
+    - cron: "0 5,17 * * *"
 
 permissions:
   contents: read
